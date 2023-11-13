@@ -1,0 +1,10 @@
+version: '3'
+services:
+  my-multi-microservice:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+      - "8088:8088"
+      - "8081:8081"
